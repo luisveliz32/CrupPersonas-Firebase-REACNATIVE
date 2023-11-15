@@ -1,20 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { Alert,StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+//import Principal from './Components/principal';
+//import Lista from './Components/Lista';
+//import Flatlist from './Components/Flatlist';
+//import Saludo from './Components/Saludo';
+//import Contador from './Components/Contador';
+//import NuevoUusuario from './Components/NuevoUusuario';
+import Principal from './components/principal';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Principal></Principal>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
